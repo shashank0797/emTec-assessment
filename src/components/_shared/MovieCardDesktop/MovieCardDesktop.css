@@ -1,0 +1,88 @@
+.card-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.card-container.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.favorite-container{
+  position: absolute;
+    bottom:1rem;
+    right: 1rem;
+}
+
+.card__face--front {
+  background: rgb(247, 237, 237);
+}
+
+.card__face--front h3,
+.card__face--front p {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.poster-container img {
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 1.125rem;
+  border-top-left-radius: 1.125rem;
+}
+
+.card__face--back {
+  background: rgb(247, 237, 237);
+  transform: rotateY(180deg);
+}
+
+.card__face--back img{
+  width:130px;
+  height: auto;
+  margin-right: 0.5rem
+}
+
+.card__face--back .movie-header-container{
+    display: flex;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.movie-description, .movie-meta-info{
+    padding: 0 1rem;
+}
+
+.movie-rating, .movie-release{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.movie-rating p, .movie-release p, .movie-rating h5, .movie-release h5{
+    margin: 0;
+}
+
+.movie-meta-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-meta-info h5{
+    padding-right: 0.5rem
+}
+

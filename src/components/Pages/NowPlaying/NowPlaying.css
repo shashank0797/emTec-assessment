@@ -1,0 +1,40 @@
+.movie-list-desktop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-list-mobile{
+margin-top: 1.5rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem
+}
+
+.search{
+  min-width: 300px;
+  min-height: 40px;
+  border-radius: 20px;
+  padding: 0 1.125rem;
+}
+
+.movie-list-mobile{
+display: none;
+}
+
+@media screen and (max-width: 480px){
+.movie-list-desktop{
+  display: none;
+}
+.movie-list-mobile{
+  display: block;
+}
+.header-container{
+  flex-direction: column;
+  margin: 0;
+}
+}

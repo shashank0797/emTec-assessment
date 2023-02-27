@@ -1,0 +1,17 @@
+.fav-list-desktop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fav-list-mobile{
+display: none;
+}
+@media screen and (max-width: 480px){
+    .fav-list-desktop{
+      display: none;
+    }
+    .fav-list-mobile{
+      display: block;
+    }
+   
+}

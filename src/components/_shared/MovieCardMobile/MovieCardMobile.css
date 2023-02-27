@@ -1,0 +1,59 @@
+.accordion {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    background: rgb(247, 237, 237);
+    border: 1px solid #5c5c5c;
+  }
+  
+  .accordion-title:hover {
+    background-color: #cbcdcd;
+  }
+
+  .plus-minus-icon {
+    font-size: x-large;
+  }
+
+  .movie-meta-info-mobile h5 {
+    padding-right: 0.5rem;
+}
+
+  .action-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .action-container .favorite-content{
+    margin-top: 0.5rem;
+  }
+
+  .accordion-title img{
+    width: 80px;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+
+  .title-content {
+    display: flex;
+  }
+
+.heading-content p, .heading-content h3{
+   margin: 0;
+  }
+  
+  .accordion-title,
+  .accordion-content {
+    padding: 1rem;
+  }
+  
+  .accordion-content {
+    background-color: rgb(247, 237, 237);
+  }
